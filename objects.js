@@ -181,6 +181,8 @@ let arr3 = arr1.map(i => i) // deep copy
 arr3[0] = "Potato"
 console.log(arr1, arr3)
 
+console.log("--------------")
+
 // ? Take Home Challenge
 
 let album = {
