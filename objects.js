@@ -181,8 +181,6 @@ let arr3 = arr1.map(i => i) // deep copy
 arr3[0] = "Potato"
 console.log(arr1, arr3)
 
-console.log("--------------")
-
 // ? Take Home Challenge
 
 let album = {
@@ -221,3 +219,16 @@ let album = {
 	* hint: use Object.keys() and something else
 		
 */
+
+console.log(album.albumInfo.album1.songInfo[1].songName)
+
+album.albumInfo.album3 = {
+	numberOfSongs: 2,
+	songInfo: [
+		{ track: 1, songName: "something" },
+		{ track: 2, songName: "something else" }
+	]
+}
+
+album.totalAlbums = Object.keys(album.albumInfo).length
+console.log(album)
